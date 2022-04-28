@@ -1,0 +1,12 @@
+@keyframes rotar{
+    0%{transform: rotate(0deg); transform-origin: 78% 78%;}
+    100%{transform: rotate(360deg); transform-origin: 78% 78%;}
+  }
+  
+  
+  @keyframes moverderecha{
+    0%{transform: translateX(0) }
+    50%{ transform: translateX(20%)}
+    100%{ transform: translateX(0)}
+  }
+  

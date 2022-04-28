@@ -1,0 +1,37 @@
+footer{
+    background-color: black;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    .grid-subcontainer2{
+        display: grid;
+        grid-template-columns: auto;
+        @media only screen and (min-width:601px){
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            grid-gap: 1%;
+        }
+        .grid-item6, .grid-item7{
+            padding-top: 3%;
+        @media only screen and (min-width:601px){
+            padding-top: 0%;
+        }
+        }
+    }
+    @media only screen and (min-width:601px){
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1%;
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        color: white;
+        a{
+            color: white;
+            text-decoration: none;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+    }
+}

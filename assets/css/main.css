@@ -1,0 +1,199 @@
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: 78% 78%;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: 78% 78%;
+  }
+}
+@keyframes moverderecha {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+* {
+  margin: 0%;
+}
+
+img {
+  width: 100%;
+}
+
+footer {
+  background-color: black;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+footer .grid-subcontainer2 {
+  display: grid;
+  grid-template-columns: auto;
+}
+@media only screen and (min-width: 601px) {
+  footer .grid-subcontainer2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 1%;
+  }
+}
+footer .grid-subcontainer2 .grid-item6, footer .grid-subcontainer2 .grid-item7 {
+  padding-top: 3%;
+}
+@media only screen and (min-width: 601px) {
+  footer .grid-subcontainer2 .grid-item6, footer .grid-subcontainer2 .grid-item7 {
+    padding-top: 0%;
+  }
+}
+@media only screen and (min-width: 601px) {
+  footer {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1%;
+  }
+}
+footer div {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+footer div a {
+  color: white;
+  text-decoration: none;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 601px) {
+  header img {
+    max-width: 60%;
+  }
+}
+
+section {
+  display: block;
+}
+@media only screen and (min-width: 601px) {
+  section {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1%;
+  }
+}
+section .grid-item1, section .grid-item2 {
+  display: flex;
+  justify-content: center;
+  display: grid;
+  grid-template-rows: auto auto;
+  border: 1px solid black;
+  padding: 1%;
+}
+section .grid-item1 .divleft, section .grid-item2 .divleft {
+  border: 1px solid gray;
+  padding: 1%;
+}
+section .grid-item1 .divright, section .grid-item2 .divright {
+  display: block;
+  text-align: center;
+}
+section .grid-item1 .divright img, section .grid-item2 .divright img {
+  border: 1px solid black;
+  border-radius: 100%;
+  width: 40%;
+}
+section .grid-item1 .titledev, section .grid-item2 .titledev {
+  text-align: center;
+  background-color: gray;
+  color: white;
+}
+section .grid-item2 .divgif {
+  text-align: center;
+}
+section .grid-item2 .divgif figure svg {
+  width: 50%;
+}
+section .grid-item2 .divgif figure svg .moverobjetos {
+  position: relative;
+  animation-name: moverderecha;
+  animation-duration: 6s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+}
+section .grid-item2 .divgif figure svg .rotarobjetos {
+  animation-name: rotar;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+}
+
+nav {
+  background-color: black;
+  height: 43px;
+  padding: 1%;
+  position: relative;
+  overflow: hidden;
+}
+nav img {
+  width: 40px;
+  float: left;
+}
+nav div {
+  float: right;
+  padding-top: 10px;
+}
+nav div a:hover {
+  color: #FFAF6D;
+}
+nav div a {
+  text-decoration: none;
+  color: white;
+  padding-right: 30px;
+}
+@media only screen and (min-width: 601px) {
+  nav div a {
+    display: contents;
+  }
+}
+nav a i {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: white;
+}
+@media only screen and (min-width: 601px) {
+  nav a i {
+    display: none !important;
+  }
+}
+nav a i i:hover {
+  color: #FFAF6D;
+}
+
+button {
+  border: white;
+  background-color: #ffaf6d;
+  border-radius: 10%;
+}
+
+button:hover {
+  background-color: white;
+}
+
+input:focus {
+  background-color: #ffaf6d;
+}
+
+/*# sourceMappingURL=main.css.map */

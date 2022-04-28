@@ -1,0 +1,19 @@
+//main.scss #minifest file
+//abstracts
+@import 'abstracts/variables';
+//vendors
+// @import 'vendors/scss/bootstrap.scss';
+//base
+@import 'base/reset';
+@import 'base/base';
+//layout
+@import 'layout/footer';
+@import 'layout/header';
+@import 'layout/main-section';
+@import 'layout/navegation';
+
+//components
+@import 'components/buttons'
+//pages
+
+//themes
